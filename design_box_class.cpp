@@ -44,3 +44,16 @@ public:
         cout<<vol<<endl;
     }
 };
+
+int x,y,z;
+    cin>>x>>y>>z;
+    Box B1(x);
+    Box B2(x,y);
+    Box B3(x,y,z);
+    Box B4(B1);
+    Box B5 = B2;
+    Box B6 = B3.docopy();
+    Box::print(B6.volume());
+    Box::print(B5.volume());
+    Box::print(B4.volume());
+    return 0;
